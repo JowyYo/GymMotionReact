@@ -6,7 +6,7 @@ interface FetchHookResponse {
     error: string | null;
 }
 
-const fetchHook = (endPoint: string) : FetchHookResponse  => {
+const useFetchHook = (endPoint: string) : FetchHookResponse  => {
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -33,4 +33,4 @@ const fetchHook = (endPoint: string) : FetchHookResponse  => {
     return { data, loading, error };
 }
 
-export default fetchHook;
+export default useFetchHook;

@@ -1,5 +1,5 @@
 import { ejercicio, GrupoMuscular } from "../model/ejercicio";
-import useFetchHook from "../hooks/fetchHook";
+import useFetchHook from "../hooks/useFetchHook";
 
 const EjercicioList = () => {
     const { data, loading, error } = useFetchHook('https://localhost:7181/ejercicios')
