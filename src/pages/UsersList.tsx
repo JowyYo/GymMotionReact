@@ -1,16 +1,16 @@
-import { IEjercicio, GrupoMuscular } from "../model/ejercicio";
+import AppTable from "../components/appTable";
 import useFetchHook from "../hooks/useFetchHook";
 import { IColumn } from "../model/column";
-import AppTable from "../components/appTable";
+import { IUser } from "../model/user";
 
-const EjercicioList = () => {
+const UsersList = () => {
     const { data, loading, error } = useFetchHook('https://jsonplaceholder.typicode.com/users')
-    const columns: IColumn<IEjercicio>[] = [
+    const columns: IColumn<IUser>[] = [
         { key: "name", label: "Nombre" },
-        { key: "description", label: "Descripción" },
-        { key: "group", label: "Grupo muscular" }
+        { key: "email", label: "Email" },
+        { key: "phone", label: "Teléfono" }
     ]
-    
+
     return (
         <>
             {
@@ -22,4 +22,4 @@ const EjercicioList = () => {
     );
 }
  
-export default EjercicioList;
+export default UsersList;

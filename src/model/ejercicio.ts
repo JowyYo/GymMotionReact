@@ -1,4 +1,4 @@
-export interface ejercicio {
+export interface IEjercicio {
     id: string,
     name: string,
     description: string,
