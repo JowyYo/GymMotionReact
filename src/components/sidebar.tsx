@@ -20,8 +20,8 @@ const Sidebar = () => {
         <div style={styles.sidebar}>
             <h2>Menú</h2>
             <ul style={styles.list}>
-                <li><Link to={"/"}/>Inicio</li>
-                <li><Link to={"/users"}/>Usuarios</li>
+                <li><Link to="/">Inicio</Link></li>
+                <li><Link to="/users">Usuarios</Link></li>
             </ul>
         </div>
     );
